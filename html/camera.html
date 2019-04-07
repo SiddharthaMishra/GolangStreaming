@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Live Stream</title>
+    <link rel="stylesheet" href='static/style.css' />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js">
+    </script>
+</head>
+
+<body>
+    <h1>Live Streaming</h1>
+    <p id="count"></p>
+    <h3><img id="img" src=""></h3>
+    <!-- <h3>{{ time }}</h3>  -->
+    <p id="sensordata"></p>
+    <hr>
+    <button onclick="move('Forward')" type="button" name="button">Forward</button><br>
+    <button onclick="move('Left')" type="button" name="button">Left</button>
+    <button onclick="move('Right')" type="button" name="button">Right</button><br>
+    <button onclick="move('Backward')" type="button" name="button">Backward</button>
+    <h3> Return to main page ==> <a href="/" class="button">RETURN</a></h3>
+    <hr>
+</body>
+<script type="text/javascript" src="static/camera.js">
+
+</script>
+
+</html>
