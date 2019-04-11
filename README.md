@@ -20,5 +20,5 @@
 ### Running
 
 1. ./server to run the server
-2. python testBroadcaster.py to start streaming
+2. ``` python testBroadcaster.py ``` to start streaming (optional), else connect a websocket to ws://localhost:3000/broadcaster and send base64 encoded jpg images
 3. from a browser, go to localhost:3000/camera.html to watch the stream
