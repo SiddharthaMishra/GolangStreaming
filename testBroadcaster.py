@@ -13,7 +13,7 @@ async def sendimages(websocket):
             #buffer = buffer.tostring()
             #print(buffer)
             await websocket.send(img)
-            await asyncio.sleep(10000)
+            await asyncio.sleep(0.01)
 
 async def recievecontrol(websocket):
     async for message in websocket:
