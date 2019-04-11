@@ -1,6 +1,5 @@
 import asyncio
 import websockets
-import time
 import cv2
 import base64
 
