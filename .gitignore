@@ -1,3 +1,4 @@
 server
 log.txt
 .vscode
+src/*.txt
