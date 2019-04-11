@@ -13,12 +13,12 @@
 
 ### Building
 
-1. ``` make install ``` to create the binary
+1. ``` make install ``` to create the server binary
 
-2. ``` make clean ``` to, remove the binary
+2. ``` make clean ``` to, remove the server binary
 
 ### Running
 
 1. ./server to run the server
 2. python testBroadcaster.py to start streaming
-3. localhost:3000/camera.html to watch the stream
+3. from a browser, go to localhost:3000/camera.html to watch the stream

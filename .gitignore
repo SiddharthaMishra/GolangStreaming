@@ -1,1 +1,3 @@
-Pipfile Pipfile.lock
+server
+log.txt
+.vscode

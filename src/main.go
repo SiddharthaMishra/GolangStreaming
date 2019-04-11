@@ -9,13 +9,13 @@ import (
 )
 
 var clientUpgrader = websocket.Upgrader{
-	ReadBufferSize:  30000,
+	ReadBufferSize:  1000,
 	WriteBufferSize: 30000,
 }
 
 var boatUpgrader = websocket.Upgrader{
 	ReadBufferSize:  30000,
-	WriteBufferSize: 30000,
+	WriteBufferSize: 1000,
 }
 
 func serveBroadcaster(w http.ResponseWriter, r *http.Request, h *Hub) *Hub {

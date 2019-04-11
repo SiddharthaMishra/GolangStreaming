@@ -42,7 +42,7 @@ func makeWS(conn *websocket.Conn, hub *Hub) GenericClient {
 	return GenericClient{
 		conn: conn,
 		hub:  hub,
-		send: make(chan []byte, 256),
+		send: make(chan []byte, 1),
 	}
 }
 
