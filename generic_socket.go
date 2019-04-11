@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"time"
 
@@ -37,11 +38,13 @@ func (g GenericClient) Send() chan []byte {
 	return g.send
 }
 
-// Make is a setter
-func (g GenericClient) Make(conn *websocket.Conn, hub *Hub) {
-	g.conn = conn
-	g.hub = hub
-	g.send = make(chan []byte, 256)
+// makeWS is a constructor for generic client
+func makeWS(conn *websocket.Conn, hub *Hub) GenericClient {
+	return GenericClient{
+		conn: conn,
+		hub:  hub,
+		send: make(chan []byte, 256),
+	}
 }
 
 // SocketInterface implements the generic socket functions
@@ -59,10 +62,13 @@ func readMessages(i SocketInterface) {
 
 	i.Conn().SetReadDeadline(time.Now().Add(pongWait))
 	i.Conn().SetPongHandler(func(string) error { i.Conn().SetReadDeadline(time.Now().Add(pongWait)); return nil })
+
 	for {
 		_, message, err := i.Conn().ReadMessage()
+		//	fmt.Println(message)
 		if err != nil {
 			if websocket.IsUnexpectedCloseError(err, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
+				fmt.Printf("error: %v", err)
 				log.Printf("error: %v", err)
 			}
 			break
@@ -77,7 +83,7 @@ func writeMessages(i SocketInterface) {
 	ticker := time.NewTicker(pingPeriod)
 	defer func() {
 		ticker.Stop()
-		i.Conn().Close()
+		i.closeConnection()
 	}()
 
 	for {
@@ -85,7 +91,8 @@ func writeMessages(i SocketInterface) {
 		case message, ok := <-i.Send():
 			i.Conn().SetWriteDeadline(time.Now().Add(writeWait))
 			if !ok {
-				// The hub closed the channel.
+				// channel is closed
+				log.Println("NOT OK")
 				i.Conn().WriteMessage(websocket.CloseMessage, []byte{})
 				return
 			}

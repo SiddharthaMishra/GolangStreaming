@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/gorilla/websocket"
 	//	"github.com/gorilla/websocket"
@@ -18,7 +20,7 @@ var boatUpgrader = websocket.Upgrader{
 	WriteBufferSize: 1024,
 }
 
-func serveBroadcaster(w http.ResponseWriter, r *http.Request) *Hub {
+func serveBroadcaster(w http.ResponseWriter, r *http.Request, h *Hub) *Hub {
 	conn, err := clientUpgrader.Upgrade(w, r, nil)
 
 	if err != nil {
@@ -26,10 +28,12 @@ func serveBroadcaster(w http.ResponseWriter, r *http.Request) *Hub {
 		return nil
 	}
 
-	h := newHub()
-	b := &Broadcaster{}
-	b.Make(conn, h)
+	b := &Broadcaster{GenericClient: makeWS(conn, h)}
+
+	log.Printf("in func broadcaster: %+v\n", b)
 	h.broadcaster = b
+
+	log.Printf("in func : %+v\n", h)
 
 	return h
 }
@@ -42,19 +46,31 @@ func serveViewer(w http.ResponseWriter, r *http.Request, h *Hub) *Viewer {
 		return nil
 	}
 
-	v := &Viewer{}
-	v.Make(conn, h)
+	v := &Viewer{GenericClient: makeWS(conn, h)}
 	v.hub.register <- v
 
 	return v
 }
 
 func main() {
-	http.Handle("/", http.FileServer(http.Dir("./html")))
-	http.Handle("/static/", http.FileServer(http.Dir("static/")))
+	f, err := os.OpenFile("log.txt", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
 
-	//	http.Handle("/", server)
-	var h *Hub
+	if err != nil {
+		fmt.Println("hii")
+		log.Fatal(err)
+	}
+
+	defer f.Close()
+	log.SetOutput(f)
+
+	log.Println("")
+
+	http.Handle("/", http.FileServer(http.Dir("./html")))
+
+	fs := http.FileServer(http.Dir("static"))
+	http.Handle("/static/", http.StripPrefix("/static/", fs))
+
+	h := newHub()
 
 	http.HandleFunc("/viewer", func(w http.ResponseWriter, r *http.Request) {
 		if h != nil {
@@ -66,13 +82,18 @@ func main() {
 	})
 
 	http.HandleFunc("/broadcaster", func(w http.ResponseWriter, r *http.Request) {
-		if h != nil {
-			h = serveBroadcaster(w, r)
+		fmt.Println("boat pinged")
+		if h.broadcaster == nil {
+			serveBroadcaster(w, r, h)
+
+			log.Printf("%+v\n", h)
+			log.Printf("Broadcaster: %+v\n", h.broadcaster)
 
 			go h.run()
 			go readMessages(h.broadcaster)
 			go writeMessages(h.broadcaster)
 		}
+		fmt.Printf("%+v\n", h)
 	})
 
 	http.ListenAndServe(":3000", nil)
