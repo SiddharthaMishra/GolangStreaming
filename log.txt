@@ -1,0 +1,460 @@
+2019/04/11 15:38:01 reached before
+2019/04/11 15:38:01 reached later
+2019/04/11 15:41:32 reached before
+2019/04/11 15:41:32 reached later
+2019/04/11 15:42:18 reached before
+2019/04/11 15:42:18 reached later
+2019/04/11 15:43:21 reached before
+2019/04/11 15:43:21 reached later
+2019/04/11 15:45:34 
+2019/04/11 15:45:37 reached before
+2019/04/11 15:45:37 reached later
+2019/04/11 15:45:37 <nil>
+2019/04/11 15:46:30 
+2019/04/11 15:46:32 reached before
+2019/04/11 15:46:32 reached later
+2019/04/11 15:46:32 &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:48:02 
+2019/04/11 15:48:02 %+v
+ &{0xc000096300 map[] 0xc00007c1e0 0xc00007c240 0xc00007c2a0}
+2019/04/11 15:48:02 reached before
+2019/04/11 15:48:02 reached later
+2019/04/11 15:48:02 &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:49:38 
+2019/04/11 15:49:39 in func : &{broadcaster:0xc00000e360 clients:map[] register:0xc000024240 unregister:0xc0000242a0 broadcast:0xc000024300}
+2019/04/11 15:49:39 %+v
+ &{0xc00000e360 map[] 0xc000024240 0xc0000242a0 0xc000024300}
+2019/04/11 15:49:39 reached before
+2019/04/11 15:49:39 reached later
+2019/04/11 15:49:39 &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:50:32 
+2019/04/11 15:50:36 in func : &{broadcaster:0xc000126040 clients:map[] register:0xc000136060 unregister:0xc0001360c0 broadcast:0xc000136120}
+2019/04/11 15:50:36 &{broadcaster:0xc000126040 clients:map[] register:0xc000136060 unregister:0xc0001360c0 broadcast:0xc000136120}
+2019/04/11 15:50:36 reached before
+2019/04/11 15:50:36 reached later
+2019/04/11 15:50:36 &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:52:14 
+2019/04/11 15:52:16 in func : &{broadcaster:0xc000126020 clients:map[] register:0xc00013a000 unregister:0xc00013a060 broadcast:0xc00013a0c0}
+2019/04/11 15:52:16 &{broadcaster:0xc000126020 clients:map[] register:0xc00013a000 unregister:0xc00013a060 broadcast:0xc00013a0c0}
+2019/04/11 15:52:16 Broadcaster: &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:52:16 reached before
+2019/04/11 15:52:16 reached later
+2019/04/11 15:52:16 &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:53:22 
+2019/04/11 15:53:24 in func broadcaster: &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:53:24 in func : &{broadcaster:0xc0000fc020 clients:map[] register:0xc000110000 unregister:0xc000110060 broadcast:0xc0001100c0}
+2019/04/11 15:53:24 &{broadcaster:0xc0000fc020 clients:map[] register:0xc000110000 unregister:0xc000110060 broadcast:0xc0001100c0}
+2019/04/11 15:53:24 Broadcaster: &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:53:24 reached before
+2019/04/11 15:53:24 reached later
+2019/04/11 15:53:24 &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:54:54 
+2019/04/11 15:54:57 before make: {conn:<nil> hub:<nil> send:<nil>}
+2019/04/11 15:54:57 after make: {conn:0xc0000ca6e0 hub:0xc000084fc0 send:0xc000064420}
+2019/04/11 15:54:57 in func broadcaster: &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:54:57 in func : &{broadcaster:0xc00000e340 clients:map[] register:0xc000024240 unregister:0xc0000242a0 broadcast:0xc000024300}
+2019/04/11 15:54:57 &{broadcaster:0xc00000e340 clients:map[] register:0xc000024240 unregister:0xc0000242a0 broadcast:0xc000024300}
+2019/04/11 15:54:57 Broadcaster: &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 15:54:57 reached before
+2019/04/11 15:54:57 reached later
+2019/04/11 15:54:57 &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 16:02:28 
+2019/04/11 16:02:30 before make: {conn:<nil> hub:<nil> send:<nil>}
+2019/04/11 16:02:30 after make: {conn:0xc0000e2840 hub:0xc00008afc0 send:0xc00009e3c0}
+2019/04/11 16:02:30 in func broadcaster: &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 16:02:30 in func : &{broadcaster:0xc0000962e0 clients:map[] register:0xc00007c1e0 unregister:0xc00007c240 broadcast:0xc00007c2a0}
+2019/04/11 16:02:30 &{broadcaster:0xc0000962e0 clients:map[] register:0xc00007c1e0 unregister:0xc00007c240 broadcast:0xc00007c2a0}
+2019/04/11 16:02:30 Broadcaster: &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 16:02:30 reached before
+2019/04/11 16:02:30 reached later
+2019/04/11 16:02:30 &{GenericClient:{conn:<nil> hub:<nil> send:<nil>}}
+2019/04/11 16:07:48 
+2019/04/11 16:07:51 in func broadcaster: &{GenericClient:{conn:0xc0000ca580 hub:0xc000084fc0 send:0xc000064420}}
+2019/04/11 16:07:51 in func : &{broadcaster:0xc00000e340 clients:map[] register:0xc000024240 unregister:0xc0000242a0 broadcast:0xc000024300}
+2019/04/11 16:07:51 &{broadcaster:0xc00000e340 clients:map[] register:0xc000024240 unregister:0xc0000242a0 broadcast:0xc000024300}
+2019/04/11 16:07:51 Broadcaster: &{GenericClient:{conn:0xc0000ca580 hub:0xc000084fc0 send:0xc000064420}}
+2019/04/11 16:07:51 reached before
+2019/04/11 16:07:51 reached later
+2019/04/11 16:07:51 &{GenericClient:{conn:0xc0000ca580 hub:0xc000084fc0 send:0xc000064420}}
+2019/04/11 16:07:51 just before for
+2019/04/11 16:08:50 
+2019/04/11 16:08:53 in func broadcaster: &{GenericClient:{conn:0xc000136000 hub:0xc00013c030 send:0xc000128060}}
+2019/04/11 16:08:53 in func : &{broadcaster:0xc000126020 clients:map[] register:0xc00013a000 unregister:0xc00013a060 broadcast:0xc00013a0c0}
+2019/04/11 16:08:53 &{broadcaster:0xc000126020 clients:map[] register:0xc00013a000 unregister:0xc00013a060 broadcast:0xc00013a0c0}
+2019/04/11 16:08:53 Broadcaster: &{GenericClient:{conn:0xc000136000 hub:0xc00013c030 send:0xc000128060}}
+2019/04/11 16:08:53 reached before
+2019/04/11 16:08:53 reached later
+2019/04/11 16:08:53 &{GenericClient:{conn:0xc000136000 hub:0xc00013c030 send:0xc000128060}}
+2019/04/11 16:08:53 just before for
+2019/04/11 16:08:56 [97 100 115]
+2019/04/11 16:08:56 []
+2019/04/11 16:08:56 error: websocket: close 1000 (normal)
+2019/04/11 16:11:26 
+2019/04/11 16:11:28 in func broadcaster: &{GenericClient:{conn:0xc0000ca840 hub:0xc000084fc0 send:0xc000064420}}
+2019/04/11 16:11:28 in func : &{broadcaster:0xc00000e360 clients:map[] register:0xc000024240 unregister:0xc0000242a0 broadcast:0xc000024300}
+2019/04/11 16:11:28 &{broadcaster:0xc00000e360 clients:map[] register:0xc000024240 unregister:0xc0000242a0 broadcast:0xc000024300}
+2019/04/11 16:11:28 Broadcaster: &{GenericClient:{conn:0xc0000ca840 hub:0xc000084fc0 send:0xc000064420}}
+2019/04/11 16:11:28 reached before
+2019/04/11 16:11:28 reached later
+2019/04/11 16:11:28 &{GenericClient:{conn:0xc0000ca840 hub:0xc000084fc0 send:0xc000064420}}
+2019/04/11 16:11:28 just before for
+2019/04/11 16:11:30 error: websocket: close 1000 (normal)
+2019/04/11 16:12:46 
+2019/04/11 16:12:49 in func broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000120030 send:0xc00010c060}}
+2019/04/11 16:12:49 in func : &{broadcaster:0xc00010a020 clients:map[] register:0xc00011e000 unregister:0xc00011e060 broadcast:0xc00011e0c0}
+2019/04/11 16:12:49 &{broadcaster:0xc00010a020 clients:map[] register:0xc00011e000 unregister:0xc00011e060 broadcast:0xc00011e0c0}
+2019/04/11 16:12:49 Broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000120030 send:0xc00010c060}}
+2019/04/11 16:12:49 reached before
+2019/04/11 16:12:49 reached later
+2019/04/11 16:12:49 &{GenericClient:{conn:0xc00011a000 hub:0xc000120030 send:0xc00010c060}}
+2019/04/11 16:12:49 just before for
+2019/04/11 16:24:54 
+2019/04/11 16:24:56 in func broadcaster: &{GenericClient:{conn:0xc0000ca6e0 hub:0xc000084c60 send:0xc000064420}}
+2019/04/11 16:24:56 in func : &{broadcaster:0xc00000e340 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 16:24:56 &{broadcaster:0xc00000e340 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 16:24:56 Broadcaster: &{GenericClient:{conn:0xc0000ca6e0 hub:0xc000084c60 send:0xc000064420}}
+2019/04/11 16:24:56 reached before
+2019/04/11 16:24:56 reached later
+2019/04/11 16:24:56 &{GenericClient:{conn:0xc0000ca6e0 hub:0xc000084c60 send:0xc000064420}}
+2019/04/11 16:24:56 just before for
+2019/04/11 16:25:56 closing broadcaster....
+2019/04/11 16:32:54 in func broadcaster: &{GenericClient:{conn:0xc000172580 hub:0xc000084c60 send:0xc0001161e0}}
+2019/04/11 16:32:54 in func : &{broadcaster:0xc00011e0a0 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 16:32:54 &{broadcaster:0xc00011e0a0 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 16:32:54 Broadcaster: &{GenericClient:{conn:0xc000172580 hub:0xc000084c60 send:0xc0001161e0}}
+2019/04/11 16:32:54 reached before
+2019/04/11 16:32:54 reached later
+2019/04/11 16:32:54 &{GenericClient:{conn:0xc000172580 hub:0xc000084c60 send:0xc0001161e0}}
+2019/04/11 16:32:54 just before for
+2019/04/11 16:33:00 
+2019/04/11 16:33:02 in func broadcaster: &{GenericClient:{conn:0xc0000e2420 hub:0xc000088c60 send:0xc00009e3c0}}
+2019/04/11 16:33:02 in func : &{broadcaster:0xc000090300 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:33:02 &{broadcaster:0xc000090300 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:33:02 Broadcaster: &{GenericClient:{conn:0xc0000e2420 hub:0xc000088c60 send:0xc00009e3c0}}
+2019/04/11 16:33:02 reached before
+2019/04/11 16:33:02 reached later
+2019/04/11 16:33:02 &{GenericClient:{conn:0xc0000e2420 hub:0xc000088c60 send:0xc00009e3c0}}
+2019/04/11 16:33:02 just before for
+2019/04/11 16:34:25 
+2019/04/11 16:34:26 in func broadcaster: &{GenericClient:{conn:0xc00012c000 hub:0xc000088c60 send:0xc0000640c0}}
+2019/04/11 16:34:26 in func : &{broadcaster:0xc00000e080 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:34:26 &{broadcaster:0xc00000e080 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:34:26 Broadcaster: &{GenericClient:{conn:0xc00012c000 hub:0xc000088c60 send:0xc0000640c0}}
+2019/04/11 16:34:26 reached before
+2019/04/11 16:34:26 reached later
+2019/04/11 16:34:26 &{GenericClient:{conn:0xc00012c000 hub:0xc000088c60 send:0xc0000640c0}}
+2019/04/11 16:34:26 just before for
+2019/04/11 16:34:26 error: websocket: close 1000 (normal)
+2019/04/11 16:34:26 closing broadcaster....
+2019/04/11 16:34:45 in func broadcaster: &{GenericClient:{conn:0xc00016e000 hub:0xc000088c60 send:0xc000160060}}
+2019/04/11 16:34:45 in func : &{broadcaster:0xc00015e020 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:34:45 &{broadcaster:0xc00015e020 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:34:45 Broadcaster: &{GenericClient:{conn:0xc00016e000 hub:0xc000088c60 send:0xc000160060}}
+2019/04/11 16:34:45 reached before
+2019/04/11 16:34:45 reached later
+2019/04/11 16:34:45 &{GenericClient:{conn:0xc00016e000 hub:0xc000088c60 send:0xc000160060}}
+2019/04/11 16:34:45 just before for
+2019/04/11 16:34:45 error: websocket: close 1000 (normal)
+2019/04/11 16:34:45 closing broadcaster....
+2019/04/11 16:34:54 in func broadcaster: &{GenericClient:{conn:0xc00016e2c0 hub:0xc000088c60 send:0xc000160480}}
+2019/04/11 16:34:54 in func : &{broadcaster:0xc00015e140 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:34:54 &{broadcaster:0xc00015e140 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:34:54 Broadcaster: &{GenericClient:{conn:0xc00016e2c0 hub:0xc000088c60 send:0xc000160480}}
+2019/04/11 16:34:54 reached before
+2019/04/11 16:34:54 reached later
+2019/04/11 16:34:54 &{GenericClient:{conn:0xc00016e2c0 hub:0xc000088c60 send:0xc000160480}}
+2019/04/11 16:34:54 just before for
+2019/04/11 16:35:54 closing broadcaster....
+2019/04/11 16:55:25 
+2019/04/11 16:57:14 
+2019/04/11 16:57:24 in func broadcaster: &{GenericClient:{conn:0xc000154160 hub:0xc000088c90 send:0xc00014a120}}
+2019/04/11 16:57:24 in func : &{broadcaster:0xc000166020 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:57:24 &{broadcaster:0xc000166020 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 16:57:24 Broadcaster: &{GenericClient:{conn:0xc000154160 hub:0xc000088c90 send:0xc00014a120}}
+2019/04/11 16:57:24 reached before
+2019/04/11 16:57:24 reached later
+2019/04/11 16:57:24 &{GenericClient:{conn:0xc000154160 hub:0xc000088c90 send:0xc00014a120}}
+2019/04/11 16:57:24 just before for
+2019/04/11 16:58:00 
+2019/04/11 16:58:03 in func broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000084c90 send:0xc00010c060}}
+2019/04/11 16:58:03 in func : &{broadcaster:0xc00010a020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 16:58:03 &{broadcaster:0xc00010a020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 16:58:03 Broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000084c90 send:0xc00010c060}}
+2019/04/11 16:58:03 reached before
+2019/04/11 16:58:03 reached later
+2019/04/11 16:58:03 &{GenericClient:{conn:0xc00011a000 hub:0xc000084c90 send:0xc00010c060}}
+2019/04/11 16:58:03 just before for
+2019/04/11 16:58:29 reached before
+2019/04/11 16:58:29 reached later
+2019/04/11 16:58:29 &{GenericClient:{conn:0xc0001a2dc0 hub:0xc000084c90 send:0xc00017e300}}
+2019/04/11 16:58:29 just before for
+2019/04/11 17:02:14 reached before
+2019/04/11 17:02:14 reached later
+2019/04/11 17:02:14 &{GenericClient:{conn:0xc0001a3760 hub:0xc000084c90 send:0xc00017e660}}
+2019/04/11 17:02:14 just before for
+2019/04/11 17:03:03 closing broadcaster....
+2019/04/11 17:07:03 closing broadcaster....
+2019/04/11 17:29:40 in func broadcaster: &{GenericClient:{conn:0xc0001a38c0 hub:0xc000084c90 send:0xc00017e7e0}}
+2019/04/11 17:29:40 in func : &{broadcaster:0xc00016aba0 clients:map[0xc00016a1a0:true 0xc00016a9e0:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:29:40 &{broadcaster:0xc00016aba0 clients:map[0xc00016a1a0:true 0xc00016a9e0:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:29:40 Broadcaster: &{GenericClient:{conn:0xc0001a38c0 hub:0xc000084c90 send:0xc00017e7e0}}
+2019/04/11 17:29:40 reached before
+2019/04/11 17:29:40 reached later
+2019/04/11 17:29:40 &{GenericClient:{conn:0xc0001a38c0 hub:0xc000084c90 send:0xc00017e7e0}}
+2019/04/11 17:29:40 just before for
+2019/04/11 17:29:40 error: websocket: close 1000 (normal)
+2019/04/11 17:29:40 closing broadcaster....
+2019/04/11 17:29:47 
+2019/04/11 17:29:50 in func broadcaster: &{GenericClient:{conn:0xc0000ca6e0 hub:0xc000084c90 send:0xc000064420}}
+2019/04/11 17:29:50 in func : &{broadcaster:0xc00000e360 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:29:50 &{broadcaster:0xc00000e360 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:29:50 Broadcaster: &{GenericClient:{conn:0xc0000ca6e0 hub:0xc000084c90 send:0xc000064420}}
+2019/04/11 17:29:50 error: websocket: close 1000 (normal)
+2019/04/11 17:29:50 closing broadcaster....
+2019/04/11 17:30:11 
+2019/04/11 17:30:12 in func broadcaster: &{GenericClient:{conn:0xc000136000 hub:0xc000088c90 send:0xc000128060}}
+2019/04/11 17:30:12 in func : &{broadcaster:0xc000126020 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 17:30:12 &{broadcaster:0xc000126020 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 17:30:12 Broadcaster: &{GenericClient:{conn:0xc000136000 hub:0xc000088c90 send:0xc000128060}}
+2019/04/11 17:30:12 error: websocket: close 1000 (normal)
+2019/04/11 17:30:12 closing broadcaster....
+2019/04/11 17:30:44 
+2019/04/11 17:30:50 in func broadcaster: &{GenericClient:{conn:0xc00012c000 hub:0xc000088c90 send:0xc0000640c0}}
+2019/04/11 17:30:50 in func : &{broadcaster:0xc00000e080 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 17:30:50 &{broadcaster:0xc00000e080 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 17:30:50 Broadcaster: &{GenericClient:{conn:0xc00012c000 hub:0xc000088c90 send:0xc0000640c0}}
+2019/04/11 17:30:50 error: websocket: close 1000 (normal)
+2019/04/11 17:30:50 closing broadcaster....
+2019/04/11 17:31:04 
+2019/04/11 17:31:06 in func broadcaster: &{GenericClient:{conn:0xc00010c000 hub:0xc000076c90 send:0xc0000fe060}}
+2019/04/11 17:31:06 in func : &{broadcaster:0xc0000fc020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:31:06 &{broadcaster:0xc0000fc020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:31:06 Broadcaster: &{GenericClient:{conn:0xc00010c000 hub:0xc000076c90 send:0xc0000fe060}}
+2019/04/11 17:31:06 error: websocket: close 1000 (normal)
+2019/04/11 17:31:06 closing broadcaster....
+2019/04/11 17:35:36 closing broadcaster....
+2019/04/11 17:37:38 
+2019/04/11 17:38:12 in func broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000084c90 send:0xc00010c060}}
+2019/04/11 17:38:12 in func : &{broadcaster:0xc00010a020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:38:12 &{broadcaster:0xc00010a020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:38:12 Broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000084c90 send:0xc00010c060}}
+2019/04/11 17:38:35 
+2019/04/11 17:38:36 in func broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000084c90 send:0xc00010c060}}
+2019/04/11 17:38:36 in func : &{broadcaster:0xc00010a020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:38:36 &{broadcaster:0xc00010a020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:38:36 Broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000084c90 send:0xc00010c060}}
+2019/04/11 17:39:20 
+2019/04/11 17:39:22 in func broadcaster: &{GenericClient:{conn:0xc0000ca580 hub:0xc000084c90 send:0xc000064420}}
+2019/04/11 17:39:22 in func : &{broadcaster:0xc00000e360 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:39:22 &{broadcaster:0xc00000e360 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:39:22 Broadcaster: &{GenericClient:{conn:0xc0000ca580 hub:0xc000084c90 send:0xc000064420}}
+2019/04/11 17:39:42 closing broadcaster....
+2019/04/11 17:39:49 in func broadcaster: &{GenericClient:{conn:0xc000284000 hub:0xc000084c90 send:0xc000065e00}}
+2019/04/11 17:39:49 in func : &{broadcaster:0xc0004d7460 clients:map[0xc00000fdc0:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:39:49 &{broadcaster:0xc0004d7460 clients:map[0xc00000fdc0:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:39:49 Broadcaster: &{GenericClient:{conn:0xc000284000 hub:0xc000084c90 send:0xc000065e00}}
+2019/04/11 17:39:58 closing broadcaster....
+2019/04/11 17:41:25 
+2019/04/11 17:41:26 in func broadcaster: &{GenericClient:{conn:0xc00011c000 hub:0xc000086c90 send:0xc00010e060}}
+2019/04/11 17:41:26 in func : &{broadcaster:0xc00010c020 clients:map[] register:0xc000024180 unregister:0xc0000241e0 broadcast:0xc000024240}
+2019/04/11 17:41:26 &{broadcaster:0xc00010c020 clients:map[] register:0xc000024180 unregister:0xc0000241e0 broadcast:0xc000024240}
+2019/04/11 17:41:26 Broadcaster: &{GenericClient:{conn:0xc00011c000 hub:0xc000086c90 send:0xc00010e060}}
+2019/04/11 17:46:44 
+2019/04/11 17:46:44 in func broadcaster: &{GenericClient:{conn:0xc000110160 hub:0xc000084c90 send:0xc000100120}}
+2019/04/11 17:46:44 in func : &{broadcaster:0xc000104040 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:46:44 &{broadcaster:0xc000104040 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:46:44 Broadcaster: &{GenericClient:{conn:0xc000110160 hub:0xc000084c90 send:0xc000100120}}
+2019/04/11 17:47:38 
+2019/04/11 17:47:38 in func broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000084c90 send:0xc00010c060}}
+2019/04/11 17:47:38 in func : &{broadcaster:0xc00010a020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:47:38 &{broadcaster:0xc00010a020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 17:47:38 Broadcaster: &{GenericClient:{conn:0xc00011a000 hub:0xc000084c90 send:0xc00010c060}}
+2019/04/11 17:50:03 closing broadcaster....
+2019/04/11 17:50:07 closing broadcaster....
+2019/04/11 18:08:19 
+2019/04/11 18:08:24 in func broadcaster: &{GenericClient:{conn:0xc00011e160 hub:0xc000088c90 send:0xc000064180}}
+2019/04/11 18:08:24 in func : &{broadcaster:0xc00000e0a0 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 18:08:24 &{broadcaster:0xc00000e0a0 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 18:08:24 Broadcaster: &{GenericClient:{conn:0xc00011e160 hub:0xc000088c90 send:0xc000064180}}
+2019/04/11 18:14:14 
+2019/04/11 18:14:16 in func broadcaster: &{GenericClient:{conn:0xc0000e2580 hub:0xc000088c90 send:0xc00009e3c0}}
+2019/04/11 18:14:16 in func : &{broadcaster:0xc000090300 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 18:14:16 &{broadcaster:0xc000090300 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 18:14:16 Broadcaster: &{GenericClient:{conn:0xc0000e2580 hub:0xc000088c90 send:0xc00009e3c0}}
+2019/04/11 18:16:15 
+2019/04/11 18:16:28 in func broadcaster: &{GenericClient:{conn:0xc0000ca6e0 hub:0xc000084c90 send:0xc000064420}}
+2019/04/11 18:16:28 in func : &{broadcaster:0xc00000e360 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:16:28 &{broadcaster:0xc00000e360 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:16:28 Broadcaster: &{GenericClient:{conn:0xc0000ca6e0 hub:0xc000084c90 send:0xc000064420}}
+2019/04/11 18:17:01 closing broadcaster....
+2019/04/11 18:17:04 closing broadcaster....
+2019/04/11 18:19:05 
+2019/04/11 18:19:11 in func broadcaster: &{GenericClient:{conn:0xc00011e2c0 hub:0xc000076c90 send:0xc0000f2360}}
+2019/04/11 18:19:11 in func : &{broadcaster:0xc0001ae4e0 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:19:11 &{broadcaster:0xc0001ae4e0 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:19:11 Broadcaster: &{GenericClient:{conn:0xc00011e2c0 hub:0xc000076c90 send:0xc0000f2360}}
+2019/04/11 18:19:34 closing broadcaster....
+2019/04/11 18:19:38 closing broadcaster....
+2019/04/11 18:20:21 
+2019/04/11 18:20:22 in func broadcaster: &{GenericClient:{conn:0xc0000e2840 hub:0xc000088c90 send:0xc00009e3c0}}
+2019/04/11 18:20:22 in func : &{broadcaster:0xc000090300 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 18:20:22 &{broadcaster:0xc000090300 clients:map[] register:0xc00007c180 unregister:0xc00007c1e0 broadcast:0xc00007c240}
+2019/04/11 18:20:22 Broadcaster: &{GenericClient:{conn:0xc0000e2840 hub:0xc000088c90 send:0xc00009e3c0}}
+2019/04/11 18:27:38 
+2019/04/11 18:28:05 in func broadcaster: &{GenericClient:{conn:0xc0000e6420 hub:0xc00010c090 send:0xc0000a2360}}
+2019/04/11 18:28:05 in func : &{broadcaster:0xc0000942c0 clients:map[] register:0xc000114000 unregister:0xc000114060 broadcast:0xc0001140c0}
+2019/04/11 18:28:05 &{broadcaster:0xc0000942c0 clients:map[] register:0xc000114000 unregister:0xc000114060 broadcast:0xc0001140c0}
+2019/04/11 18:28:05 Broadcaster: &{GenericClient:{conn:0xc0000e6420 hub:0xc00010c090 send:0xc0000a2360}}
+2019/04/11 18:33:46 
+2019/04/11 18:35:12 in func broadcaster: &{GenericClient:{conn:0xc00013a000 hub:0xc00008cc90 send:0xc00012c060}}
+2019/04/11 18:35:12 in func : &{broadcaster:0xc00012a020 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:35:12 &{broadcaster:0xc00012a020 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:35:12 Broadcaster: &{GenericClient:{conn:0xc00013a000 hub:0xc00008cc90 send:0xc00012c060}}
+2019/04/11 18:35:12 error: websocket: close 1000 (normal)
+2019/04/11 18:35:12 closing broadcaster....
+2019/04/11 18:35:27 
+2019/04/11 18:35:29 in func broadcaster: &{GenericClient:{conn:0xc0000e62c0 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 18:35:29 in func : &{broadcaster:0xc000094300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:35:29 &{broadcaster:0xc000094300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:35:29 Broadcaster: &{GenericClient:{conn:0xc0000e62c0 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 18:35:29 error: websocket: close 1000 (normal)
+2019/04/11 18:35:29 closing broadcaster....
+2019/04/11 18:35:31 in func broadcaster: &{GenericClient:{conn:0xc00015a000 hub:0xc00008cc90 send:0xc0000680c0}}
+2019/04/11 18:35:31 in func : &{broadcaster:0xc00000e080 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:35:31 &{broadcaster:0xc00000e080 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:35:31 Broadcaster: &{GenericClient:{conn:0xc00015a000 hub:0xc00008cc90 send:0xc0000680c0}}
+2019/04/11 18:35:31 error: websocket: close 1000 (normal)
+2019/04/11 18:35:31 closing broadcaster....
+2019/04/11 18:36:23 closing broadcaster....
+2019/04/11 18:36:25 closing broadcaster....
+2019/04/11 18:36:40 
+2019/04/11 18:36:43 in func broadcaster: &{GenericClient:{conn:0xc00011e000 hub:0xc000088c90 send:0xc000110060}}
+2019/04/11 18:36:43 in func : &{broadcaster:0xc00010e020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:36:43 &{broadcaster:0xc00010e020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:36:43 Broadcaster: &{GenericClient:{conn:0xc00011e000 hub:0xc000088c90 send:0xc000110060}}
+2019/04/11 18:36:43 error: websocket: close 1000 (normal)
+2019/04/11 18:36:43 closing broadcaster....
+2019/04/11 18:37:23 in func broadcaster: &{GenericClient:{conn:0xc000172160 hub:0xc000088c90 send:0xc0001521e0}}
+2019/04/11 18:37:23 in func : &{broadcaster:0xc00014c080 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:37:23 &{broadcaster:0xc00014c080 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:37:23 Broadcaster: &{GenericClient:{conn:0xc000172160 hub:0xc000088c90 send:0xc0001521e0}}
+2019/04/11 18:37:29 closing broadcaster....
+2019/04/11 18:37:37 closing broadcaster....
+2019/04/11 18:38:17 closing broadcaster....
+2019/04/11 18:45:32 
+2019/04/11 18:45:34 in func broadcaster: &{GenericClient:{conn:0xc0000e66e0 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 18:45:34 in func : &{broadcaster:0xc000096300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:45:34 &{broadcaster:0xc000096300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:45:34 Broadcaster: &{GenericClient:{conn:0xc0000e66e0 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 18:45:45 closing broadcaster....
+2019/04/11 18:46:28 closing broadcaster....
+2019/04/11 18:49:31 in func broadcaster: &{GenericClient:{conn:0xc0000e69a0 hub:0xc00008cc90 send:0xc0000a2720}}
+2019/04/11 18:49:31 in func : &{broadcaster:0xc0000963e0 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:49:31 &{broadcaster:0xc0000963e0 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:49:31 Broadcaster: &{GenericClient:{conn:0xc0000e69a0 hub:0xc00008cc90 send:0xc0000a2720}}
+2019/04/11 18:51:00 error: websocket: close 1000 (normal)
+2019/04/11 18:51:00 closing broadcaster....
+2019/04/11 18:51:02 in func broadcaster: &{GenericClient:{conn:0xc0000e7760 hub:0xc00008cc90 send:0xc0000a32c0}}
+2019/04/11 18:51:02 in func : &{broadcaster:0xc000096740 clients:map[0xc000096680:true] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:51:02 &{broadcaster:0xc000096740 clients:map[0xc000096680:true] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:51:02 Broadcaster: &{GenericClient:{conn:0xc0000e7760 hub:0xc00008cc90 send:0xc0000a32c0}}
+2019/04/11 18:51:10 
+2019/04/11 18:51:12 in func broadcaster: &{GenericClient:{conn:0xc000110000 hub:0xc00007ac90 send:0xc000102060}}
+2019/04/11 18:51:12 in func : &{broadcaster:0xc000100020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:51:12 &{broadcaster:0xc000100020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:51:12 Broadcaster: &{GenericClient:{conn:0xc000110000 hub:0xc00007ac90 send:0xc000102060}}
+2019/04/11 18:52:00 closing broadcaster....
+2019/04/11 18:52:05 
+2019/04/11 18:52:09 in func broadcaster: &{GenericClient:{conn:0xc00011e000 hub:0xc000088c90 send:0xc000110060}}
+2019/04/11 18:52:09 in func : &{broadcaster:0xc00010e020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:52:09 &{broadcaster:0xc00010e020 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:52:09 Broadcaster: &{GenericClient:{conn:0xc00011e000 hub:0xc000088c90 send:0xc000110060}}
+2019/04/11 18:52:45 closing broadcaster....
+2019/04/11 18:52:47 in func broadcaster: &{GenericClient:{conn:0xc0000cf8c0 hub:0xc000088c90 send:0xc000068780}}
+2019/04/11 18:52:47 in func : &{broadcaster:0xc00000e3e0 clients:map[0xc00010e260:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:52:47 &{broadcaster:0xc00000e3e0 clients:map[0xc00010e260:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 18:52:47 Broadcaster: &{GenericClient:{conn:0xc0000cf8c0 hub:0xc000088c90 send:0xc000068780}}
+2019/04/11 18:53:03 closing broadcaster....
+2019/04/11 18:56:18 
+2019/04/11 18:56:20 in func broadcaster: &{GenericClient:{conn:0xc0000e66e0 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 18:56:20 in func : &{broadcaster:0xc000094300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:56:20 &{broadcaster:0xc000094300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 18:56:20 Broadcaster: &{GenericClient:{conn:0xc0000e66e0 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 18:56:50 closing broadcaster....
+2019/04/11 19:06:28 
+2019/04/11 19:06:34 in func broadcaster: &{GenericClient:{conn:0xc000146000 hub:0xc00008cc90 send:0xc000138060}}
+2019/04/11 19:06:34 in func : &{broadcaster:0xc000136020 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:06:34 &{broadcaster:0xc000136020 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:06:34 Broadcaster: &{GenericClient:{conn:0xc000146000 hub:0xc00008cc90 send:0xc000138060}}
+2019/04/11 19:06:41 closing broadcaster....
+2019/04/11 19:07:07 in func broadcaster: &{GenericClient:{conn:0xc000192160 hub:0xc00008cc90 send:0xc00018a120}}
+2019/04/11 19:07:07 in func : &{broadcaster:0xc0001a4020 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:07:07 &{broadcaster:0xc0001a4020 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:07:07 Broadcaster: &{GenericClient:{conn:0xc000192160 hub:0xc00008cc90 send:0xc00018a120}}
+2019/04/11 19:07:28 closing broadcaster....
+2019/04/11 19:07:29 closing broadcaster....
+2019/04/11 19:07:52 in func broadcaster: &{GenericClient:{conn:0xc000192580 hub:0xc00008cc90 send:0xc00018a240}}
+2019/04/11 19:07:52 in func : &{broadcaster:0xc0000940c0 clients:map[0xc000136140:true] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:07:52 &{broadcaster:0xc0000940c0 clients:map[0xc000136140:true] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:07:52 Broadcaster: &{GenericClient:{conn:0xc000192580 hub:0xc00008cc90 send:0xc00018a240}}
+2019/04/11 19:08:01 closing broadcaster....
+2019/04/11 19:08:18 closing broadcaster....
+2019/04/11 19:08:19 in func broadcaster: &{GenericClient:{conn:0xc0001462c0 hub:0xc00008cc90 send:0xc0000a25a0}}
+2019/04/11 19:08:19 in func : &{broadcaster:0xc000358080 clients:map[0xc000136140:true] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:08:19 &{broadcaster:0xc000358080 clients:map[0xc000136140:true] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:08:19 Broadcaster: &{GenericClient:{conn:0xc0001462c0 hub:0xc00008cc90 send:0xc0000a25a0}}
+2019/04/11 19:08:24 closing broadcaster....
+2019/04/11 19:08:46 closing broadcaster....
+2019/04/11 19:09:03 
+2019/04/11 19:09:09 in func broadcaster: &{GenericClient:{conn:0xc00013a000 hub:0xc00008cc90 send:0xc00012c060}}
+2019/04/11 19:09:09 in func : &{broadcaster:0xc00012a020 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:09:09 &{broadcaster:0xc00012a020 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:09:09 Broadcaster: &{GenericClient:{conn:0xc00013a000 hub:0xc00008cc90 send:0xc00012c060}}
+2019/04/11 19:09:48 closing broadcaster....
+2019/04/11 19:09:49 in func broadcaster: &{GenericClient:{conn:0xc00013a6e0 hub:0xc00008cc90 send:0xc00012c780}}
+2019/04/11 19:09:49 in func : &{broadcaster:0xc00012a220 clients:map[0xc00012a180:true] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:09:49 &{broadcaster:0xc00012a220 clients:map[0xc00012a180:true] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:09:49 Broadcaster: &{GenericClient:{conn:0xc00013a6e0 hub:0xc00008cc90 send:0xc00012c780}}
+2019/04/11 19:10:03 closing broadcaster....
+2019/04/11 19:11:14 
+2019/04/11 19:11:16 in func broadcaster: &{GenericClient:{conn:0xc0000e66e0 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 19:11:16 in func : &{broadcaster:0xc000096300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:11:16 &{broadcaster:0xc000096300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:11:16 Broadcaster: &{GenericClient:{conn:0xc0000e66e0 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 19:14:09 
+2019/04/11 19:14:13 in func broadcaster: &{GenericClient:{conn:0xc0000e6420 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 19:14:13 in func : &{broadcaster:0xc000094300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:14:13 &{broadcaster:0xc000094300 clients:map[] register:0xc000080180 unregister:0xc0000801e0 broadcast:0xc000080240}
+2019/04/11 19:14:13 Broadcaster: &{GenericClient:{conn:0xc0000e6420 hub:0xc00008cc90 send:0xc0000a23c0}}
+2019/04/11 19:14:22 closing broadcaster....
+2019/04/11 19:14:25 
+2019/04/11 19:14:31 in func broadcaster: &{GenericClient:{conn:0xc00012e420 hub:0xc000088c90 send:0xc000126120}}
+2019/04/11 19:14:31 in func : &{broadcaster:0xc00012c060 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:14:31 &{broadcaster:0xc00012c060 clients:map[] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:14:31 Broadcaster: &{GenericClient:{conn:0xc00012e420 hub:0xc000088c90 send:0xc000126120}}
+2019/04/11 19:20:34 closing broadcaster....
+2019/04/11 19:20:35 in func broadcaster: &{GenericClient:{conn:0xc00016a580 hub:0xc000088c90 send:0xc0001ea480}}
+2019/04/11 19:20:35 in func : &{broadcaster:0xc0001ca180 clients:map[0xc0001ca100:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:20:35 &{broadcaster:0xc0001ca180 clients:map[0xc0001ca100:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:20:35 Broadcaster: &{GenericClient:{conn:0xc00016a580 hub:0xc000088c90 send:0xc0001ea480}}
+2019/04/11 19:20:49 closing broadcaster....
+2019/04/11 19:21:22 closing broadcaster....
+2019/04/11 19:21:29 closing broadcaster....
+2019/04/11 19:21:41 in func broadcaster: &{GenericClient:{conn:0xc000448580 hub:0xc000088c90 send:0xc000068840}}
+2019/04/11 19:21:41 in func : &{broadcaster:0xc0004460c0 clients:map[0xc0001ca100:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:21:41 &{broadcaster:0xc0004460c0 clients:map[0xc0001ca100:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:21:41 Broadcaster: &{GenericClient:{conn:0xc000448580 hub:0xc000088c90 send:0xc000068840}}
+2019/04/11 19:22:03 closing broadcaster....
+2019/04/11 19:22:04 in func broadcaster: &{GenericClient:{conn:0xc00016a160 hub:0xc000088c90 send:0xc000068660}}
+2019/04/11 19:22:04 in func : &{broadcaster:0xc00000e460 clients:map[0xc0001ca100:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:22:04 &{broadcaster:0xc00000e460 clients:map[0xc0001ca100:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:22:04 Broadcaster: &{GenericClient:{conn:0xc00016a160 hub:0xc000088c90 send:0xc000068660}}
+2019/04/11 19:22:35 closing broadcaster....
+2019/04/11 19:22:47 closing broadcaster....
+2019/04/11 19:22:49 in func broadcaster: &{GenericClient:{conn:0xc00016a2c0 hub:0xc000088c90 send:0xc0001424e0}}
+2019/04/11 19:22:49 in func : &{broadcaster:0xc00012c260 clients:map[0xc00000e880:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:22:49 &{broadcaster:0xc00012c260 clients:map[0xc00000e880:true] register:0xc0000241e0 unregister:0xc000024240 broadcast:0xc0000242a0}
+2019/04/11 19:22:49 Broadcaster: &{GenericClient:{conn:0xc00016a2c0 hub:0xc000088c90 send:0xc0001424e0}}
+2019/04/11 19:22:58 closing broadcaster....
+2019/04/11 19:24:21 closing broadcaster....
+2019/04/11 19:24:37 closing broadcaster....

@@ -33,16 +33,7 @@ window.onload = () => {
     let url = `ws://${document.domain}:${location.port}/viewer`
     let ws = new WebSocket(url);
     ws.onmessage = (event) => {
-        //       console.log(event)
-        img.src = event.data;
+        img.src = 'data:image/png;base64,' + event.data;
         console.log(event.data);
     }
 }
-
-// $(document).ready(function() {
-//     let url = `ws://${document.domain}:${location.port}`;
-//     let ws = WebSocket(url);
-//     ws.onmessage = (event) => {
-
-//     }
-// })
