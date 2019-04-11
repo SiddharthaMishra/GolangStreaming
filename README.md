@@ -7,6 +7,7 @@
 
 2. Python dependancies (optional, for broadcasting only)
 
+* Required python version >= 3.6
 * Use the requirements.txt: ``` pip install -r requirements.txt ``` 
 
 
