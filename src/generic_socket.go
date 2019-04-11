@@ -100,12 +100,6 @@ func writeMessages(i SocketInterface) {
 			}
 			w.Write(message)
 
-			// Add queued chat messages to the current websocket message.
-			n := len(i.Send())
-			for l := 0; l < n; l++ {
-				w.Write(<-i.Send())
-			}
-
 			if err := w.Close(); err != nil {
 				return
 			}
@@ -114,6 +108,7 @@ func writeMessages(i SocketInterface) {
 			if err := i.Conn().WriteMessage(websocket.PingMessage, nil); err != nil {
 				return
 			}
+		default:
 		}
 	}
 

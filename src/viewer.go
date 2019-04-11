@@ -11,5 +11,8 @@ func (v *Viewer) closeConnection() {
 }
 
 func (v *Viewer) sendMessage(message []byte) {
-	v.hub.broadcaster.send <- message
+	select {
+	case v.hub.broadcaster.send <- message:
+	default:
+	}
 }

@@ -11,5 +11,8 @@ func (b *Broadcaster) closeConnection() {
 }
 
 func (b *Broadcaster) sendMessage(message []byte) {
-	b.hub.broadcast <- message
+	select {
+	case b.hub.broadcast <- message:
+	default:
+	}
 }

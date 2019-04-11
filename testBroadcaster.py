@@ -14,6 +14,6 @@ async def hello():
             retval, buffer = cv2.imencode('.png', img)
             img = base64.b64encode(buffer)
             await websocket.send(img)
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(0.01)
 
 asyncio.get_event_loop().run_until_complete(hello())
