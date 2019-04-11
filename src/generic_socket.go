@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"time"
 
@@ -68,7 +67,6 @@ func readMessages(i SocketInterface) {
 		//	fmt.Println(message)
 		if err != nil {
 			if websocket.IsUnexpectedCloseError(err, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
-				fmt.Printf("error: %v", err)
 				log.Printf("error: %v", err)
 			}
 			break
@@ -92,7 +90,6 @@ func writeMessages(i SocketInterface) {
 			i.Conn().SetWriteDeadline(time.Now().Add(writeWait))
 			if !ok {
 				// channel is closed
-				log.Println("NOT OK")
 				i.Conn().WriteMessage(websocket.CloseMessage, []byte{})
 				return
 			}

@@ -29,11 +29,9 @@ window.onload = () => {
     let div = document.getElementById("sentdata");
     let img = document.getElementById('img');
 
-
     let url = `ws://${document.domain}:${location.port}/viewer`
     let ws = new WebSocket(url);
     ws.onmessage = (event) => {
         img.src = 'data:image/png;base64,' + event.data;
-        console.log(event.data);
     }
 }
