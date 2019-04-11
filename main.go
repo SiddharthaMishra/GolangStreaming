@@ -18,23 +18,35 @@ var boatUpgrader = websocket.Upgrader{
 	WriteBufferSize: 1024,
 }
 
-var clients map[*Client]bool
-
-func serveClient(w http.ResponseWriter, r *http.Request) {
+func serveBroadcaster(w http.ResponseWriter, r *http.Request) *Hub {
 	conn, err := clientUpgrader.Upgrade(w, r, nil)
 
 	if err != nil {
 		log.Println(err)
-		return
+		return nil
 	}
 
-	client := &Client{conn: conn}
+	h := newHub()
+	b := &Broadcaster{}
+	b.Make(conn, h)
+	h.broadcaster = b
 
-	clients[client] = true
+	return h
+}
 
-	go client.writeMessages()
-	go client.readMessages()
+func serveViewer(w http.ResponseWriter, r *http.Request, h *Hub) *Viewer {
+	conn, err := clientUpgrader.Upgrade(w, r, nil)
 
+	if err != nil {
+		log.Println(err)
+		return nil
+	}
+
+	v := &Viewer{}
+	v.Make(conn, h)
+	v.hub.register <- v
+
+	return v
 }
 
 func main() {
@@ -42,9 +54,25 @@ func main() {
 	http.Handle("/static/", http.FileServer(http.Dir("static/")))
 
 	//	http.Handle("/", server)
+	var h *Hub
 
-	http.HandleFunc("/server", func(w http.ResponseWriter, r *http.Request) {
-		serveClient(w, r)
+	http.HandleFunc("/viewer", func(w http.ResponseWriter, r *http.Request) {
+		if h != nil {
+			v := serveViewer(w, r, h)
+
+			go readMessages(v)
+			go writeMessages(v)
+		}
+	})
+
+	http.HandleFunc("/broadcaster", func(w http.ResponseWriter, r *http.Request) {
+		if h != nil {
+			h = serveBroadcaster(w, r)
+
+			go h.run()
+			go readMessages(h.broadcaster)
+			go writeMessages(h.broadcaster)
+		}
 	})
 
 	http.ListenAndServe(":3000", nil)

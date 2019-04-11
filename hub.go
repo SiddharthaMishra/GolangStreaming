@@ -2,20 +2,29 @@ package main
 
 // Hub maintains the set of active clients
 type Hub struct {
-	clients map[*Client]bool
+
+	// Who is broadcasting
+	broadcaster *Broadcaster
+
+	// List of open clients
+	clients map[*Viewer]bool
 
 	// Register requests from the clients.
-	register chan *Client
+	register chan *Viewer
 
 	// Unregister requests from clients.
-	unregister chan *Client
+	unregister chan *Viewer
+
+	// Messages from the ship
+	broadcast chan []byte
 }
 
 func newHub() *Hub {
 	return &Hub{
-		register:   make(chan *Client),
-		unregister: make(chan *Client),
-		clients:    make(map[*Client]bool),
+		register:   make(chan *Viewer),
+		unregister: make(chan *Viewer),
+		broadcast:  make(chan []byte),
+		clients:    make(map[*Viewer]bool),
 	}
 }
 
@@ -27,15 +36,13 @@ func (h *Hub) run() {
 		case client := <-h.unregister:
 			if _, ok := h.clients[client]; ok {
 				delete(h.clients, client)
-				close(client.send)
 			}
 		case message := <-h.broadcast:
 			for client := range h.clients {
 				select {
 				case client.send <- message:
 				default:
-					close(client.send)
-					delete(h.clients, client)
+					client.closeConnection()
 				}
 			}
 		}
