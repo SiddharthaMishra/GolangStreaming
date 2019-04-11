@@ -16,9 +16,7 @@ window.onload = () => {
 
     /* allow buttons to send control signals */
     let buttons = document.getElementsByClassName("direction");
-    console.log(buttons);
     for (let button of buttons) {
-        console.log(button);
         button.onclick = () => {
             console.log(button);
             ws.send(JSON.stringify({
@@ -28,7 +26,6 @@ window.onload = () => {
     }
 
     /* change images when a new one is recieved */
-    let div = document.getElementById("sentdata");
     let img = document.getElementById('img');
     ws.onmessage = (event) => {
         img.src = 'data:image/jpg;base64,' + event.data;
