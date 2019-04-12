@@ -64,6 +64,8 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
 	h := newHub()
+	go h.run()
+
 
 	http.HandleFunc("/viewer", func(w http.ResponseWriter, r *http.Request) {
 		if h != nil {
@@ -80,7 +82,6 @@ func main() {
 
 			serveBroadcaster(w, r, h)
 
-			go h.run()
 			go readMessages(h.broadcaster)
 			go writeMessages(h.broadcaster)
 		}
@@ -88,5 +89,5 @@ func main() {
 
 	fmt.Println("Server started")
 
-	http.ListenAndServe(":3000", nil)
+	http.ListenAndServe(":8000", nil)
 }
