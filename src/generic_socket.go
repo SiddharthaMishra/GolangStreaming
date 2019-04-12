@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"time"
-
+	"fmt"
 	"github.com/gorilla/websocket"
 )
 
@@ -12,7 +12,7 @@ const (
 	writeWait = 10 * time.Second
 
 	// Time allowed to read the next pong message from the peer.
-	pongWait = 60 * time.Second
+	pongWait = 100 * time.Second
 
 	// Send pings to peer with this period. Must be less than pongWait.
 	pingPeriod = (pongWait * 9) / 10
@@ -39,10 +39,11 @@ func (g GenericClient) Send() chan []byte {
 
 // makeWS is a constructor for generic client
 func makeWS(conn *websocket.Conn, hub *Hub) GenericClient {
+	fmt.Println("CONNEddCT")
 	return GenericClient{
 		conn: conn,
 		hub:  hub,
-		send: make(chan []byte, 1),
+		send: make(chan []byte, 100),
 	}
 }
 
@@ -64,7 +65,7 @@ func readMessages(i SocketInterface) {
 
 	for {
 		_, message, err := i.Conn().ReadMessage()
-		//	fmt.Println(message)
+	//	fmt.Println(message)
 		if err != nil {
 			if websocket.IsUnexpectedCloseError(err, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
 				log.Printf("error: %v", err)
@@ -93,6 +94,9 @@ func writeMessages(i SocketInterface) {
 				i.Conn().WriteMessage(websocket.CloseMessage, []byte{})
 				return
 			}
+
+		//	log.Println(message)
+		//	fmt.Println(message)
 
 			w, err := i.Conn().NextWriter(websocket.TextMessage)
 			if err != nil {

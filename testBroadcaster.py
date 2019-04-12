@@ -8,20 +8,22 @@ async def sendimages(websocket):
     while True:
             retval, img = cap.read()
             retval, buffer = cv2.imencode('.jpg', img)
-            img = base64.b64encode(buffer)
+        #    img = base64.b64encode(buffer)
             #buffer = buffer.tostring()
             #print(buffer)
-            await websocket.send(img)
-            await asyncio.sleep(0.01)
+        #    await websocket.send(img)
+            await asyncio.sleep(1.1)
 
 async def recievecontrol(websocket):
-    async for message in websocket:
+    while True:
+    #async for message in websocket:
+        message = await websocket.recv()
         print(message)
 
 async def hello():
 
     async with websockets.connect(
-        'ws://localhost:3000/broadcaster') as websocket:
+        'ws://10.0.34.87:8000/broadcaster') as websocket:
         
         send_task = asyncio.ensure_future(sendimages(websocket))
         recieve_task = asyncio.ensure_future(recievecontrol(websocket))
