@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 // Hub maintains the set of active clients
 type Hub struct {
 
@@ -21,9 +25,9 @@ type Hub struct {
 
 func newHub() *Hub {
 	return &Hub{
-		register:   make(chan *Viewer),
-		unregister: make(chan *Viewer),
-		broadcast:  make(chan []byte),
+		register:   make(chan *Viewer, 10),
+		unregister: make(chan *Viewer, 10),
+		broadcast:  make(chan []byte, 100),
 		clients:    make(map[*Viewer]bool),
 	}
 }
@@ -33,6 +37,7 @@ func (h *Hub) run() {
 		select {
 		case client := <-h.register:
 			h.clients[client] = true
+			fmt.Println("Connected to the hub!!!")
 		case client := <-h.unregister:
 			if _, ok := h.clients[client]; ok {
 				delete(h.clients, client)
@@ -40,7 +45,7 @@ func (h *Hub) run() {
 		case message := <-h.broadcast:
 			for client := range h.clients {
 				select {
-				case client.send <- message:
+				case client.send <- message: fmt.Println("sent")
 				default:
 					client.closeConnection()
 				}

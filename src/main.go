@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"fmt"
 
 	"github.com/gorilla/websocket"
 )
@@ -63,6 +64,8 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
 	h := newHub()
+	go h.run()
+
 
 	http.HandleFunc("/viewer", func(w http.ResponseWriter, r *http.Request) {
 		if h != nil {
@@ -75,13 +78,16 @@ func main() {
 
 	http.HandleFunc("/broadcaster", func(w http.ResponseWriter, r *http.Request) {
 		if h.broadcaster == nil {
+			fmt.Println("connecting")
+
 			serveBroadcaster(w, r, h)
 
-			go h.run()
 			go readMessages(h.broadcaster)
 			go writeMessages(h.broadcaster)
 		}
 	})
 
-	http.ListenAndServe(":3000", nil)
+	fmt.Println("Server started")
+
+	http.ListenAndServe(":8000", nil)
 }

@@ -1,12 +1,12 @@
-// function b64(e) {
-//     var t = "";
-//     var n = new Uint8Array(e);
-//     var r = n.byteLength;
-//     for (var i = 0; i < r; i++) {
-//         t += String.fromCharCode(n[i])
-//     }
-//     return window.btoa(t)
-// }
+function b64(e) {
+    var t = "";
+    var n = new Uint8Array(e);
+    var r = n.byteLength;
+    for (var i = 0; i < r; i++) {
+        t += String.fromCharCode(n[i])
+    }
+    return window.btoa(t)
+}
 
 window.onload = () => {
 
@@ -28,6 +28,11 @@ window.onload = () => {
     /* change images when a new one is recieved */
     let img = document.getElementById('img');
     ws.onmessage = (event) => {
-        img.src = 'data:image/jpg;base64,' + event.data;
+     //   console.log(event)
+        img.src = 'data:image/jpg;base64,' + (event.data);
+    }
+
+    window.onbeforeunload = () => {
+        ws.close();
     }
 }
